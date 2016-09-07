@@ -1,4 +1,4 @@
-Blank HTML App Designer Template for Building Mobile Cordova Web Apps
+My Digital Cook Book for learning Resources
 =====================================================================
 
 Copyright © 2012-2015, Intel Corporation. All rights reserved.
