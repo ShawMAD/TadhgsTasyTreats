@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "961b68a4-5790-42a6-854a-d1b5ca2a5933",
-      "lastModifiedDate": 1473705829367,
+      "lastModifiedDate": 1473923381359,
       "creationDate": 1473269015881
     },
     "XDK-app-designer": "true",
@@ -97,6 +97,51 @@
         "description": "Cordova InAppBrowser Plugin",
         "data": {},
         "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-camera",
+        "name": "Camera",
+        "version": "2.2.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-camera",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-camera",
+        "selectedState": "Included",
+        "checksum": "ec9311a8",
+        "dependsOn": [
+          "cordova-plugin-compat"
+        ],
+        "topLevel": true,
+        "permissions": {
+          "android:name": [
+            "android.permission.WRITE_EXTERNAL_STORAGE"
+          ]
+        },
+        "description": "Cordova Camera Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-compat",
+        "name": "Compat",
+        "version": "1.0.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-compat",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-compat",
+        "selectedState": "Included",
+        "checksum": "61c62eb",
+        "dependsOn": [],
+        "topLevel": false,
+        "permissions": {},
+        "description": "Cordova Compatibility Plugin",
+        "data": {},
+        "dependedBy": [
+          "cordova-plugin-camera"
+        ],
+        "custom": "true"
       }
     ],
     "buildConfigurations": {
@@ -112,23 +157,14 @@
         },
         "isActive_": true,
         "certificateId_": "",
-        "appName_": "TadhgsTasyTreats",
-        "appID_": "xdk.intel.blank.ad.template.crosswalk",
+        "appName_": "TadhgsTastyTreats",
+        "appID_": "xdk.intel.tadhgstastytreats.MADMenu",
         "appAccess_": {
-          "mode": "whitelist",
-          "network": [
-            "*"
-          ],
-          "intents": [
-            "http://*/*",
-            "https://*/*",
-            "tel:*",
-            "sms:*",
-            "mailto:*",
-            "geo:*",
-            "market:*"
-          ],
-          "navigation": []
+          "mode": "block",
+          "network": [],
+          "intents": [],
+          "navigation": [],
+          "properties": {}
         },
         "icons_": [],
         "splashes_": [],
@@ -137,7 +173,7 @@
         "cordovaCLIVersion_": "6.2.0",
         "crosswalkVersion_": "19",
         "appVersion_": "0.0.1",
-        "appAuthor_": "Intel XDK",
+        "appAuthor_": "Tadhg Deeney",
         "appDescription_": "Template to develop a Cordova mobile web app using the App Designer UI editor.",
         "appVersionCode_": "1",
         "signed_": true

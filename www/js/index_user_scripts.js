@@ -45,7 +45,7 @@
     // device APIs are available
     //
     function openLink() {
-         iabRef = window.open('https://www.tripadvisor.ie/Restaurants-g186605-Dublin_County_Dublin.html', '_blank', 'location=yes');
+         iabRef = window.open('https://lovindublin.com/best-of', '_blank', 'location=yes');
          iabRef.addEventListener('loadstop', replaceHeaderImage);
          iabRef.addEventListener('exit', iabClose);
     }
